@@ -6,4 +6,4 @@ install:
 lint:
 	pylint --disable=R,C,E1120,E0401 hello.py		
 test:
-	python -m pytest  tests/*.py
+	python -m pytest -vv --cov=mylib --cov=cli --cov=scli tests/*.py
